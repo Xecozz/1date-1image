@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&family=Roboto:wght@300&family=Slabo+13px&display=swap");
+
+/* ======== Base ========  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  transition: 0.3 linear;
+  scroll-behavior: smooth;
+}
+body,
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* ======== Section ========  */
+section {
+  height: 100vh;
+  width: 100%;
+}
+section:nth-of-type(odd) {
+  color: black;
+  background: f8f8f8;
+}
+
+section:nth-of-type(even) {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(0, 0, 0);
+}
+section .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 9%;
+  font-size: 4rem;
+  font-family: "Fredoka One", cursive;
+}
+/* ======== Header ========  */
+#header {
+  /* position */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* flex layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 9%;
+  /* style */
+  background: hsla(230, 8%, 15%, 0.9);
+  backdrop-filter: saturate(180%) blur(16px);
+  -wwbkit-backdrop-filter: saturate(180%) blur(16px);
+  box-shadow: 0 6px 4px hsla(0, 4%, 15%, 0.2);
+  z-index: 99;
+}
+
+/* links */
+.navbar li {
+  display: inline-block;
+  padding-right: 3rem;
+}
+
+.navbar li a {
+  position: relative !important;
+  color: hsl(195, 12%, 94%, 0.7);
+  transition: all 0.3s ease 0.1s;
+}
+
+.navbar li a:hover {
+  /* color: #0088a9; */
+  color: hsla(195, 12%, 100%, 0.9);
+}
+nav ul li a::before,
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  left: auto;
+  width: 0;
+  height: 3px;
+}
+
+nav ul li a::before {
+  background-color: #235aa6;
+  transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
+}
+
+nav ul li a::after {
+  background-color: #f25757;
+  transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1);
+}
+
+nav ul li a:hover::after,
+nav ul li a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+/* button */
+button[class="btn-contact"] {
+  position: absolute;
+  right: 9%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 9px 25px;
+  color: #edf0f1;
+  background-color: rgba(0, 136, 169, 1);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button[class="btn-contact"]:hover {
+  background-color: rgba(64, 82, 90, 0.452);
+  color: aquamarine;
+}
+
+/* ======= Secend header layout ====== */
+
+#header {
+  justify-content: flex-end;
+}
+.logo {
+  margin-right: auto;
+}
+a[class="sign-in"] {
+  margin-left: 7rem;
+}
+
+/* logo */
+.logo {
+  position: absolute;
+  position: fixed;
+  top: 0.1%;
+  left: 1.8%;
+  height: 50px;
+  width: 50px;
+  padding: 10;
+  z-index: 99;
+}
+
+#header {
+  justify-content: flex-end;
+}
+.logo {
+  margin-right: auto;
+}
+a[class="sign-in"] {
+  margin-left: 7rem;
+}
+
+.description {
+  position: absolute;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  z-index: 20;
+  font-size: 3.2rem;
+}
+
+.description_api {
+  position: absolute;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  z-index: 20;
+}
+
+#home {
+  background-image: url("video/wallpaperbetter.com_2560x1440.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#about {
+  background-image: url("video/moon-1527501\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rechercher {
+  margin-bottom: 35vw;
+  margin-left: 8%;
+}
+
+.reponse {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  width: 96vw;
+  font-size: 2.5rem;
+  position: absolute;
+  margin-bottom: 30vh;
+  text-align: center;
+}
+.reponseimg {
+  /* background-color: #235aa6; */
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  width: 49vw;
+  position: absolute;
+  margin-top: 10vh;
+  margin-right: 49vw;
+  text-align: center;
+}
+.reponsetxt {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #f25757; */
+  height: 20vh;
+  width: 45vw;
+  position: absolute;
+  margin-top: 10vh;
+  margin-left: 52vw;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.description_api {
+  /* background-color: aquamarine; */
+  height: 20vh;
+  width: 50vw;
+  position: absolute;
+  margin-bottom: 52vh;
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.rechercher {
+  font-family: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.rechercher input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.3rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: inset 1px 1px 1px #e0e0e080;
+  color: #4c575c;
+  transition: all 0.25s ease 0s;
+}
+
+.rechercher input:focus {
+  border-color: #409eff;
+  outline: none;
+  box-shadow: inset 1px 1px 1px #e0e0e080, 0 0 0 3px #409eff80;
+}
+
+.rechercher button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  border: 1px solid #4c575c;
+  background: #4c575c;
+  color: #e5e5e5;
+  transition: all 0.25s ease 0s;
+  cursor: pointer;
+}
+
+.rechercher button:focus {
+  border-color: #409eff;
+  outline: none;
+  box-shadow: 0 0 0 3px #409eff80;
+}

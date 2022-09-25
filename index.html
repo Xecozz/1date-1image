@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Une Date, Une Image</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="css/video/favicon_io/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <a href="https://api.nasa.gov/">
+        <img
+          src="https://api.nasa.gov/assets/footer/img/favicon-192.png"
+          class="logo"
+          href=""
+        />
+      </a>
+
+      <nav>
+        <ul class="navbar">
+          <li><a href="#home">C'est quoi?</a></li>
+          <li><a href="#about">Api utilisée</a></li>
+          <li><a href="#contact">Découvrir</a></li>
+        </ul>
+      </nav>
+      <a href="/frontend/account/login.html" class="sign-in">
+        <button class="btn-contact">Sign in</button>
+      </a>
+    </header>
+    <section id="home">
+      <div class="content">
+        <p class="description">
+          "Une Date, Une Image" est un site web interactif vous permettant de
+          découvrir une image liée à l'espace grâce à une date
+        </p>
+      </div>
+    </section>
+    <section id="about">
+      <div class="content">
+        <p class="description">
+          Nous utilisons L'api (base de donnée) de la Nasa pour vous faire
+          découvrir la beauté de l'espace
+        </p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="content">
+        <div class="rechercher">
+          <input
+            id="searchTerm"
+            type="text"
+            name="nasa"
+            class="input"
+            placeholder="yyyy-mm-jj"
+          />
+          <button id="search" type="submit" class="myButton">Rechercher</button>
+        </div>
+        <div class="description_api">
+          Rentrez une date avec le format YYYY-mm-jj et découvrez l'espace !
+        </div>
+        <div id="title" class="reponse"></div>
+        <div id="img" class="reponseimg"></div>
+        <div id="txt" class="reponsetxt"></div>
+      </div>
+    </section>
+  </body>
+</html>
